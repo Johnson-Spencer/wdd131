@@ -1,0 +1,48 @@
+#content{
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 50px 60px;
+    border: 1px solid #aaa;
+}
+
+h1{
+    text-align: center;
+    font-weight: normal;
+}
+
+h2{
+    color: #4f9acf;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 45px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+#text{
+    line-height: 2;
+}
+
+#text ol {
+    margin-top: 25px;
+}
+
+#text li {
+    margin-bottom: 25px;
+}
+
+.image{
+    text-align: center;
+    
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+}
+
