@@ -46,3 +46,17 @@ p {
     height: 100px;
 }
 
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark #content {
+    border-color: #666;
+}
+
+.dark h2 {
+    color: #7db7e8;
+    border-bottom-color: #666;
+}
