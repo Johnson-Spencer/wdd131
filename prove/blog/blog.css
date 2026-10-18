@@ -1,0 +1,116 @@
+
+
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #382238;
+    margin: 0;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #f4a261;
+    border-bottom: 1px solid #f4a261;
+}
+
+nav a {
+    color: #b00020;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1.5rem 0;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.book-details {
+    text-align: right;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+}
+
+.book-details p {
+    margin: 0.75rem 0;
+}
+
+.book-content {
+    border-top: 1px solid #f4a261;
+    padding-top: 1rem;
+}
+
+.book-content h2 {
+    color: #b00020;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+}
+
+.book-content img {
+    display: block;
+    width: 125px;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.book-content p {
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #f4a261;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    body {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .book {
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .book-details {
+        border-right: 1px solid #f4a261;
+        padding-right: 1.5rem;
+    }
+
+    .book-content {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .book-content img {
+        width: 155px;
+    }
+}
