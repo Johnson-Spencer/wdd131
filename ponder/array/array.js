@@ -48,7 +48,7 @@ console.log(coursesButBetter[1].name);
 console.log(coursesButBetter[1].code);
 
 
-let body = document.querrySelector("body");
+let body = document.querySelector("body");
 
 coursesButBetter.forEach((item) => {
     //build out an HTML div with course contents
