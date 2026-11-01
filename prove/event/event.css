@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  background: #bfd1dd;
+  color: #111;
+}
+
+.wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 14px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: clamp(2.5rem, 7vw, 4rem);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+input,
+select,
+button {
+  min-height: 3.2rem;
+  padding: 0.65rem;
+  border: 2px solid #777;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 1.1rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  background: #bfd1dd;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+button:hover,
+button:focus {
+  background: #d9e5eb;
+}
+
+.hidden {
+  display: none;
+}
+
+#messages {
+  margin-top: 1.25rem;
+  color: #a40000;
+  font-weight: bold;
+}
+
+#messages ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+#ticketOutput {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border: 2px solid #547386;
+  border-radius: 8px;
+  background: #eaf2f6;
+}
+
+#ticketOutput h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    padding: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full {
+    grid-column: auto;
+  }
+}
