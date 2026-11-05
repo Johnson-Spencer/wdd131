@@ -19,6 +19,7 @@ const aCourse = {
         }
     ],
     enrollStudent: function(sectionNumber) {
+
         //find the correct section in the array based on sectionNumber passed in
         this.sections.forEach(section => {
             if(section.sectionNum === sectionNumber) {
@@ -53,9 +54,6 @@ document.querySelector("#sections").innerHTML = html.join("");
 renderSections(aCourse.sections);
 
 document.querySelector("#enrollStudent").addEventListener("click", function () {
-    const sectionNum = Number(
-        document.querySelector("#sectionNumber").value
-    );
-
+    const sectionNum = document.querySelector("#sectionNumber").value;
     aCourse.enrollStudent(sectionNum);
 });
