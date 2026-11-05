@@ -54,6 +54,9 @@ document.querySelector("#sections").innerHTML = html.join("");
 renderSections(aCourse.sections);
 
 document.querySelector("#enrollStudent").addEventListener("click", function () {
-    const sectionNum = document.querySelector("#sectionNumber").value;
+    const sectionNum = Number(
+        document.querySelector("#sectionNumber").value
+    );
+
     aCourse.enrollStudent(sectionNum);
 });
